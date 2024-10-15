@@ -1,0 +1,172 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .contact {
+        margin: 10px 0; 
+    }
+
+    .image-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .image-container img {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 50px 20px; 
+    }
+
+    .ss {
+        font-size: 3em; 
+    }
+
+    .button {
+        width: 100%; 
+        margin: 20px 0; 
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffcf9;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #fffcf9;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: -270px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.error-page {
+    padding: 100px 50px;
+}
+
+.error-page h1 img {
+    width: 600px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.error-page p {
+    font-size: 18px;
+    color: #666;
+}
+
+.error-page .back-home {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #4EA1D3;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.error-page .try-again {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #F1A93A;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .error-page h1 img {
+        width: 80%; /* Ukuran gambar di perangkat kecil */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .error-page p {
+        font-size: 16px; /* Ukuran teks lebih kecil */
+    }
+
+    .error-page .back-home,
+    .error-page .try-again {
+        padding: 10px 20px; /* Padding lebih kecil di tombol */
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .error-page h1 img {
+        width: 100%; /* Gambar mengambil penuh lebar pada ponsel */
+    }
+
+    .error-page {
+        padding: 50px 20px; /* Padding lebih kecil di perangkat sangat kecil */
+    }
+
+    .error-page h2 {
+        font-size: 24px; /* Ukuran font lebih kecil untuk judul */
+    }
+
+    .error-page p {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+}

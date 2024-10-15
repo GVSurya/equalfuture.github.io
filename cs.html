@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center</title>
+        <link rel="stylesheet" href="responsive.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf5ef;
+            height: 100vh;
+                        overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        header {
+            padding: 20px 0;
+            background-color: #f7f7f7;
+            color: #000000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-grow: 1;
+            margin-left: -270px;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        .nav-links a.active {
+            background-color: #3ba1c8;
+            color: rgb(0, 0, 0);
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 200px;
+            gap: 50px;
+            padding: 0 50px;
+        }
+
+        .info-box {
+            background-color: #e0eff9;
+            padding: 50px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .info-box h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .info-box .number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: #88d3f0;
+            position: relative;
+        }
+
+        .highlight h2,
+        .highlight p {
+            color: #ffffff;
+        }
+
+        .highlight h2 {
+            font-size: 50px;
+        }
+
+        .highlight p {
+            font-size: 100px;
+            margin-top: 1px;
+        }
+
+        /* Gaya untuk gambar agar berada setengah di dalam dan setengah di luar kotak */
+        .highlight img {
+            position: absolute;
+            top: -230px;
+            /* Menentukan seberapa jauh gambar berada di atas */
+            left: 55%;
+            transform: translateX(-50%);
+            width: 600px;
+            /* Sesuaikan ukuran gambar */
+            z-index: 1;
+            /* Pastikan gambar berada di atas konten lain */
+        }
+
+        .form-box form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form-box form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-box form input,
+        .form-box form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-box form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: center;
+        }
+
+        .form-box form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Equal Future</div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tours.html" class="active">Tours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 style="font-size: 50px">HALO ANDA SEDANG BERADA DI CALL CENTER</h1>
+        <p style="margin-top: 50px; font-size: 20px;">Berikut adalah beberapa pihak berwenang yang dapat membantu Anda.
+        </p>
+
+        <div class="info-section">
+            <!-- Lembaga Berwenang -->
+            <div class="info-box">
+                <h2>Lembaga Berwenang</h2>
+                <p class="number">129</p>
+                <p>KEMENTERIAN PPPA</p>
+            </div>
+
+            <!-- Polisi 110 -->
+            <div class="info-box highlight">
+                <img src="image/17.png" alt="Logo Polisi">
+                <h2>Polisi</h2>
+                <p>110</p>
+            </div>
+
+            <!-- Form Pengaduan -->
+            <div class="info-box form-box">
+                <h2>AYO SPEAK UP!!!</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="pengaduan">Pengaduan:</label>
+                    <textarea id="pengaduan" name="pengaduan" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

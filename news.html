@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equal Future</title>
+        <link rel="stylesheet" href="responsive.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf5ef;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        header {
+            padding: 20px 0;
+            background-color: #faf5ef;
+            color: #000000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-grow: 1;
+            margin-left: -270px;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        .nav-links a.active {
+            background-color: #3ba1c8;
+            color: rgb(0, 0, 0);
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .article {
+            width: 50%;
+            margin-top: 50px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+
+        .article h2 {
+            margin-top: 10px;
+        }
+
+        .article p {
+            margin-top: 10px;
+        }
+
+        /* Flexbox untuk tombol dan tanggal */
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .article button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .article .date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .post-container {
+            width: 50%;
+            padding: 10px;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        .post-container h3 {
+            text-align: center;
+            font-size: 40px;
+            color: #333;
+        }
+
+        .big-box {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .big-box img {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .box-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .big-box:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .big-box h2 {
+            font-size: 16px;
+            margin: 0;
+            color: #333;
+        }
+
+        .big-box p {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Equal Future</div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tours.html" class="active">Tours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Main Article -->
+        <div class="article">
+            <img src="image/13.jpg" alt="Main Article Image">
+            <h2>Psikolog UGM Beberkan Dampak Minimnya Keterlibatan Ayah Dalam Pengasuhan</h2>
+            <p>Indonesia masuk peringkat tiga fatherless country di dunia, yang berarti negara dengan masyarakatnya minim
+            peran/keterlibatan sosok ayah dalam kehidupan anak.</p>
+
+            <!-- Bagian footer artikel untuk tombol dan tanggal -->
+            <div class="article-footer">
+                <a
+                    href="https://ugm.ac.id/id/berita/23757-psikolog-ugm-beberkan-dampak-minimnya-keterlibatan-ayah-dalam-pengasuhan/">
+                    <button class="read-more">Read More</button>
+                </a>
+                <p class="date">May 22, 2023</p>
+            </div>
+        </div>
+
+        <!-- Sidebar / Recent Posts -->
+        <div class="post-container">
+            <!-- Judul Recent Post -->
+            <h3>Recent Posts</h3>
+
+            <!-- Setiap gambar memiliki link terpisah -->
+            <a href="https://mediaindonesia.com/internasional/563269/kaum-perempuan-semakin-terpinggirkan-dalam-dunia-kerja"
+                class="big-box">
+                <div class="box-content">
+                    <img src="image/16.jpg" alt="Description 1">
+                    <div>
+                        <h2>Kaum Perempuan Semakin Terpinggirkan dalam Dunia Kerja</h2>
+                        <p>March 06, 2024</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://muria.inews.id/read/497168/nikita-mirzani-vs-lolly-pertarungan-identitas-perempuan-di-ruang-publik" class="big-box">
+                <div class="box-content">
+                    <img src="image/14.jpg" alt="Description 2">
+                    <div>
+                        <h2>Nikita Mirzani VS Lolly, Pertarungan Identitas Perempuan di Ruang Publik</h2>
+                        <p>Sept 24, 2024</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.gemagazine.or.id/2024/03/25/mengungkap-budaya-patriarki-dalam-masyarakat-indonesia/" class="big-box">
+                <div class="box-content">
+                    <img src="image/15.jpg" alt="Description 3">
+                    <div>
+                        <h2>Mengungkap Budaya Patriarki dalam Masyarakat Indonesia</h2>
+                        <p>March 23, 2024</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
